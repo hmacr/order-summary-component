@@ -17,29 +17,36 @@
     />
     <title>Frontend Mentor | Order summary card</title>
   </head>
-  <body class="font-Red-Hat-Display">
+  <body
+    class="font-Red-Hat-Display font-medium bg-pattern-mobile md:bg-pattern-desktop bg-contain bg-no-repeat bg-pale-blue-500"
+  >
     <!-- Container -->
-    <div>
+    <div
+      class="h-screen max-w-screen-xl mx-auto flex justify-center items-center"
+    >
       <!-- Card -->
-      <div>
+      <div class="w-[420px] bg-white rounded-2xl shadow-xl">
         <!-- Banner -->
         <div>
           <img
             src="./images/illustration-hero.svg"
             alt="banner"
+            class="rounded-t-2xl"
           />
         </div>
         <!-- Content -->
-        <div>
+        <div class="p-8">
           <!-- Heading -->
-          <h1>Order Summary</h1>
+          <h1 class="text-center text-2xl font-black text-dark-blue">
+            Order Summary
+          </h1>
           <!-- Description -->
-          <p>
+          <p class="text-center py-5 text-desaturated-blue">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
           <!-- Details -->
-          <div>
+          <div class="bg-pale-blue-300 rounded-2xl p-6 flex items-center gap-5">
             <!-- Icon -->
             <div>
               <img
@@ -49,18 +56,29 @@
             </div>
             <!-- Chosen Plan -->
             <div>
-              <h4>Annual Plan</h4>
-              <p>$59.99/year</p>
+              <h4 class="font-black">Annual Plan</h4>
+              <p class="text-desaturated-blue">$59.99/year</p>
             </div>
             <!-- Change Plan -->
-            <div>
-              <a href="#">Change</a>
+            <div class="ml-auto text-bright-blue underline font-bold">
+              <a class="hover:cursor-pointer hover:opacity-80 transition-colors"
+                >Change</a
+              >
             </div>
           </div>
           <!-- Buttons -->
-          <div>
-            <button>Proceed to Payment</button>
-            <button>Cancel Order</button>
+          <div
+            class="flex flex-col mt-6 py-5 gap-5 font-bold tracking-wide text-[14px]"
+          >
+            <a
+              class="bg-bright-blue p-4 rounded-xl text-white text-center shadow-lg shadow-dark-blue/50 hover:cursor-pointer hover:opacity-80 transition-colors"
+            >
+              Proceed to Payment
+            </a>
+            <a
+              class="self-center text-center text-desaturated-blue hover:cursor-pointer hover:text-dark-blue transition-colors"
+              >Cancel Order</a
+            >
           </div>
         </div>
       </div>
